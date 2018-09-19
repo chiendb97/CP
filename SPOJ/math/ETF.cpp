@@ -54,13 +54,24 @@ void erotos()
 
 int main()
 {
-    erotos();
     int test;
     cin >> test;
     while (test--) {
         int x;
         cin >> x;
-        cout << phi[x] << "\n";
+        int ans = x;
+        for (int i = 2; i*i <= x; ++i) {
+            if (x % i == 0) {
+                ans -= ans/i;
+                while (x % i == 0) {
+                    x /= i;
+                }
+            }
+        }
+        if (x > 1) {
+            ans -= ans / x;
+        }
+        cout << ans << "\n";
     }
     return 0;
 }
