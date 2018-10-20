@@ -1,5 +1,5 @@
 /*
-Dem so luong so nguyen to no hon hoac bang n
+Dem so luong so nguyen to nho hon hoac bang n
 */
 
 #include <bits/stdc++.h>
