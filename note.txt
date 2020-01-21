@@ -1,4 +1,0 @@
-extended euclid
-lehman
-miller-rabin
-lehmer formula
